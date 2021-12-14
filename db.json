@@ -1,0 +1,26 @@
+{
+  "guardas": [
+    {
+      "cedula": "15487",
+      "nombre": "topa",
+      "eps": "sanitas",
+      "fondo": "porveniir",
+      "fecha": "2021-12-30",
+      "id": 1
+    }
+  ],
+  "dotacion": [
+    {
+      "nombre": "hulmar",
+      "camisa": "5",
+      "pantalon": "6",
+      "gorra": "sitew",
+      "zapatos": "9",
+      "corbata": "5",
+      "chaqueta": "4",
+      "oberol": "5",
+      "fecha": "2021-11-28",
+      "id": 2
+    }
+  ]
+}
