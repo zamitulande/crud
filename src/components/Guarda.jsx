@@ -2,6 +2,7 @@ import React from 'react'
 import { useNavigate} from 'react-router-dom';
 import Swal from 'sweetalert2';
 
+
 //redux
 import { useDispatch } from 'react-redux';
 import { borrarGuardaAction, obtenerGuardaEditar } from '../actions/guardaAction';
@@ -14,14 +15,16 @@ const Guarda = ({guarda}) => {
     //habilitar history para redireccion
     const history = useNavigate();
 
+   
+
     //confirmar si dese aliminar el id sellecionado
     const confirmarEliminarGuarda=id => {
 
             //preguntar al usuario
-            Swal.fire({
+           Swal.fire({
                 title: 'Estas seguro?',
                 text: "Un guarda que se elimina no se puede recuperar!",
-                icon: 'warning',
+                icon: 'success',
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
                 cancelButtonColor: '#d33',

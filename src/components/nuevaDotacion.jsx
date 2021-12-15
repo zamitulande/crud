@@ -70,11 +70,9 @@ const NuevaDotacion = () => {
         //una vez se agregue el objeto se redirige al listado
         history('/dotaciones');
     }
-    return (
-        <div>
-        <div>
-            <div>
-                <div>
+    return (            
+         <div className='flex flex-row min-h-screen justify-center items-center'>
+         <div>
                 <h2>
                             Agregar Nuevo Dotacion
                         </h2>
@@ -185,8 +183,6 @@ const NuevaDotacion = () => {
                 </div>
                         
             </div>
-        </div>
-    </div>
         
              );
 }

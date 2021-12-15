@@ -47,9 +47,8 @@ const EditarGuarda = () => {
      }
     
     return ( 
-        <div>
-        <div>
-            <div>
+        
+            <div className='flex flex-row min-h-screen justify-center items-center'>
                 <div>
                     <h2>
                         Editar Informacion del Guarda
@@ -124,8 +123,7 @@ const EditarGuarda = () => {
         </nav>
                          
             </div>
-        </div>
-    </div>
+       
      );
 }
  

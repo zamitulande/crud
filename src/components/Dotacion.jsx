@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate} from 'react-router-dom';
 import Swal from 'sweetalert2';
-
 //redux
 import { useDispatch } from 'react-redux';
 import { borrarDotacionAction, obtenerDotacionEditar } from '../actions/dotacionAction';

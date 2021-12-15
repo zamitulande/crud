@@ -54,9 +54,8 @@ const EditarDotacion = () => {
    
 
     return (
-        <div>
-        <div>
-            <div>
+        
+            <div className='flex flex-row min-h-screen justify-center items-center'>
                 <div>
                     
                     <form
@@ -165,8 +164,7 @@ const EditarDotacion = () => {
                 </div>
                         
             </div>
-        </div>
-    </div>
+        
         
              );
 }
