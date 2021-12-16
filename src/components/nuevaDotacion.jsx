@@ -70,10 +70,15 @@ const NuevaDotacion = () => {
         //una vez se agregue el objeto se redirige al listado
         history('/dotaciones');
     }
-    return (            
-         <div className='flex flex-row min-h-screen justify-center items-center'>
-         <div>
-                <h2>
+    return (   
+        <>
+              <div className='cotenedor'>  
+              <div className='mt-20 text-3xl' >
+                     <h1 className='text-emerald-500 bg-transparent text-center border border-solid border-emerald-500 hover:bg-emerald-500 hover:text-white active:bg-emerald-600 font-bold uppercase px-8 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 text-3xl'><Link to={'/'} >Volver a Inicio</Link></h1>
+                </div>
+                <div className='flex flex-row mt-60 justify-center items-center'>
+                <div>
+                        <h2>
                             Agregar Nuevo Dotacion
                         </h2>
                         
@@ -183,6 +188,9 @@ const NuevaDotacion = () => {
                 </div>
                         
             </div>
+            </div>
+           
+        </>
         
              );
 }

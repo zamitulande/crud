@@ -13,15 +13,15 @@ import NuevaDotacion from './components/nuevaDotacion';
 import Dotaciones from './components/Dotaciones';
 import EditarGuarda from './components/EditarGuarda';
 import EditarDotacion from './components/editarDotacion';
-import Header from './components/Header'
+//import Header from './components/Header'
 
 
 
-function App() {
+function App(props) {
   return (
     <Router>
       <Provider store={store}>
-        <Header/>
+      
       <Routes>
           <Route exact path="/" element={<Principal/>}  /> 
           <Route exact path="/guarda" element={<Guardas/>}  />
@@ -39,4 +39,4 @@ function App() {
   );
 }
 
-export default App;
+export default  App;

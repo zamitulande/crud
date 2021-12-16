@@ -49,6 +49,10 @@ const Guarda = ({guarda}) => {
             history(`editar/${guarda.id}`)
     }
     return (
+        <>
+                 <div className='mt-20 text-3xl' >
+                     <h1 className='text-emerald-500 bg-transparent tex-center border border-solid border-emerald-500 hover:bg-emerald-500 hover:text-white active:bg-emerald-600 font-bold uppercase px-8 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 text-3xl'><Link to={'/'} >Volver a Inicio</Link></h1>
+                </div>
         <tr>
             <td>{cedula}</td>
             <td>{nombre}</td>
@@ -66,6 +70,7 @@ const Guarda = ({guarda}) => {
                     >Eliminar</button>
             </td>
         </tr>
+        </>
       );
 }
  
