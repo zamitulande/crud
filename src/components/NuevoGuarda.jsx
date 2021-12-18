@@ -66,13 +66,13 @@ const NuevoGuarda = () => {
         <>
               <div className='cotenedor'>  
               <div className='mt-20 text-3xl' >
-                     <h1 className='text-emerald-500 bg-transparent text-center border border-solid border-emerald-500 hover:bg-emerald-500 hover:text-white active:bg-emerald-600 font-bold uppercase px-8 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 text-3xl'><Link to={'/'} >Volver a Inicio</Link></h1>
+                     <h1 className='text-gray-800 bg-transparent text-center border border-solid border-gray-800 hover:bg-gray-800 hover:text-white active:bg-gray-800 font-bold uppercase px-8 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 text-3xl'><Link to={'/'} >Volver a Inicio</Link></h1>
                 </div>
                 <div className='flex flex-row mt-60 justify-center items-center'>
                 
                     <div >
                     
-                        <h2>
+                        <h2 >
                             Agregar Nuevo Guarda
                         </h2>
 
@@ -133,6 +133,7 @@ const NuevoGuarda = () => {
                             </div>
                         
                             <button
+                                className='text-gray-800 bg-transparent text-center border border-solid border-gray-800 hover:bg-gray-800 hover:text-white active:bg-gray-800 font-bold uppercase px-4 py-1 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 text-l'
                                 type="submit"                              >
                                     Agregar
                                 </button>
@@ -142,7 +143,9 @@ const NuevoGuarda = () => {
                         {error ? <p>Hubo un error</p> : null}
                         <nav>
                         <div >
-                            <h1><Link to={'/dotaciones'} >Cancelar</Link></h1>
+                            <h1 
+                                className='text-gray-800 bg-transparent text-center border border-solid border-gray-800 hover:bg-gray-800 hover:text-white active:bg-gray-800 font-bold uppercase px-4 py-1 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 text-l'
+                            ><Link to={'/dotaciones'} >Cancelar</Link></h1>
                         </div>
 
             

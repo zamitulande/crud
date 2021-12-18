@@ -108,6 +108,7 @@ const EditarGuarda = () => {
                         </div>
                     
                         <button
+                            className='text-gray-800 bg-transparent text-center border border-solid border-gray-800 hover:bg-gray-800 hover:text-white active:bg-gray-800 font-bold uppercase px-8 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 text-3xl'
                             type="submit"
                             >
                                 Guardar Cambios
@@ -116,7 +117,9 @@ const EditarGuarda = () => {
                 </div>
                 <nav>
             <div >
-                <h1><Link to={'/guarda'} >Cancelar</Link></h1>
+                <h1
+                    className='text-gray-800 bg-transparent text-center border border-solid border-gray-800 hover:bg-gray-800 hover:text-white active:bg-gray-800 font-bold uppercase px-8 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 text-3xl'
+                ><Link to={'/guarda'} >Cancelar</Link></h1>
             </div>
 
             

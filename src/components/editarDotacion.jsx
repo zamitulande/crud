@@ -138,7 +138,7 @@ const EditarDotacion = () => {
                         </div>
                         <div>
                             <label>Fecha de entrega</label>
-                            <input
+                            <input                                
                                 type="date"                                
                                 placeholder="cantidad"
                                 name="fecha"
@@ -148,7 +148,8 @@ const EditarDotacion = () => {
                            />
                            </div>
                              <button
-                            type="submit"
+                                    className='text-gray-800 bg-transparent text-center border border-solid border-gray-800 hover:bg-gray-800 hover:text-white active:bg-gray-800 font-bold uppercase px-8 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 text-3xl'
+                                    type="submit"
                             >
                                 Guardar Edicion
                           </button>
@@ -156,7 +157,9 @@ const EditarDotacion = () => {
                     </form>
                     <nav>
                         <div >
-                            <h1><Link to={'/dotaciones'} >Cancelar</Link></h1>
+                            <h1 
+                                className='text-gray-800 bg-transparent text-center border border-solid border-gray-800 hover:bg-gray-800 hover:text-white active:bg-gray-800 font-bold uppercase px-8 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 text-3xl'
+                            ><Link to={'/dotaciones'} >Cancelar</Link></h1>
                         </div>
 
             

@@ -53,13 +53,14 @@ const Dotacion = ({dotacion}) => {
             <td>{fecha}</td>
             <td >
                 <button
+                    className='text-gray-800 bg-transparent text-center border border-solid border-gray-800 hover:bg-gray-800 hover:text-white active:bg-gray-800 font-bold uppercase px-4 py-1 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 text-l'
                     type="button"
                     onClick={()=>redireccionarEdicion(dotacion)}
                    >
                      Editar</button>
                 <button
+                    className='text-red-400 bg-transparent text-center border border-solid border-red-400 hover:bg-red-400 hover:text-white active:bg-gray-800 font-bold uppercase px-4 py-1 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 text-l'
                     type="button"
-                    
                     onClick={()=> confirmarEliminarDotacion(id)}
                     >Eliminar</button>
             </td>

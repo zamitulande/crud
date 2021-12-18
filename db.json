@@ -7,20 +7,40 @@
       "fondo": "porveniir",
       "fecha": "2021-12-30",
       "id": 1
+    },
+    {
+      "cedula": "10617301285",
+      "nombre": "zami tulande",
+      "eps": "sanitas",
+      "fondo": "porvenir",
+      "fecha": "2021-12-01",
+      "id": 2
     }
   ],
   "dotacion": [
     {
-      "nombre": "rocio",
-      "camisa": "ss",
-      "pantalon": "9aa",
-      "gorra": "8",
-      "zapatos": "8",
-      "corbata": "9",
-      "chaqueta": "8",
-      "oberol": "65a",
-      "fecha": "2021-12-16",
-      "id": 3
+      "nombre": "zami",
+      "camisa": "1",
+      "pantalon": "1",
+      "gorra": "1",
+      "zapatos": "1",
+      "corbata": "1",
+      "chaqueta": "1",
+      "oberol": "1",
+      "fecha": "2021-12-09",
+      "id": 1
+    },
+    {
+      "nombre": "ssss",
+      "camisa": "ssss",
+      "pantalon": "ssss",
+      "gorra": "sss",
+      "zapatos": "sss",
+      "corbata": "sss",
+      "chaqueta": "sss",
+      "oberol": "sss",
+      "fecha": "2021-11-30",
+      "id": 2
     }
   ]
 }

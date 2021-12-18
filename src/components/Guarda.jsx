@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate} from 'react-router-dom';
+import { useNavigate, Link} from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 
@@ -50,9 +50,6 @@ const Guarda = ({guarda}) => {
     }
     return (
         <>
-                 <div className='mt-20 text-3xl' >
-                     <h1 className='text-emerald-500 bg-transparent tex-center border border-solid border-emerald-500 hover:bg-emerald-500 hover:text-white active:bg-emerald-600 font-bold uppercase px-8 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 text-3xl'><Link to={'/'} >Volver a Inicio</Link></h1>
-                </div>
         <tr>
             <td>{cedula}</td>
             <td>{nombre}</td>
@@ -60,11 +57,13 @@ const Guarda = ({guarda}) => {
             <td>{fondo}</td>
             <td>{fecha}</td>
             <td>
-                <button                     
+                <button   
+                    className='text-gray-800 bg-transparent text-center border border-solid border-gray-800 hover:bg-gray-800 hover:text-white active:bg-gray-800 font-bold uppercase px-4 py-1 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 text-l'      
                     type="button"
                     onClick={()=>redireccionarEdicion(guarda)}
                     >Editar</button>
                 <button
+                    className='text-red-400 bg-transparent text-center border border-solid border-red-400 hover:bg-red-400 hover:text-white active:bg-gray-800 font-bold uppercase px-4 py-1 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 text-l'    
                     type="button"                    
                     onClick={()=>confirmarEliminarGuarda(id)}
                     >Eliminar</button>
