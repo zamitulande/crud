@@ -43,6 +43,7 @@ const Dotacion = ({dotacion}) => {
         navigate(`/dotacion/editar/${id}`)
     }
     return ( 
+        
         <tr>
             <td>{nombre}</td>
             <td>{camisa}</td>
@@ -66,6 +67,7 @@ const Dotacion = ({dotacion}) => {
             </td>
 
         </tr>
+       
      );
 }
  

@@ -25,14 +25,17 @@ const Dotaciones = () => {
     const cargando = useSelector(state =>state.dotacion.loading);
     return (
       <Fragment>
-          <div className='mt-20 text-3xl' >
-                     <h1 className='text-gray-800 bg-transparent border border-solid border-gray-800 hover:bg-gray-800 hover:text-white active:bg-gray-800 font-bold uppercase px-8 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 text-3xl text-center'><Link to={'/'} >Volver a Inicio</Link></h1>
+          <div className='container mx-auto border-2 my-5'>
+          <div className='mt-20 text-3xl text-center' >
+                     <h1 className='text-gray-800 bg-transparent border border-solid border-gray-800 hover:bg-gray-800 hover:text-white active:bg-gray-800 font-bold uppercase px-8 py-3 rounded-full outline-none focus:outline-none  mb-10  ease-linear transition-all duration-150 text-3xl '><Link to={'/'} >Volver a Inicio</Link></h1>
+                     <Link to={"/dotacion"}
+                className='text-gray-800 bg-transparent border border-solid border-gray-800 hover:bg-gray-800 hover:text-white active:bg-gray-800 font-bold uppercase px-3 py-1 rounded-full outline-none focus:outline-none mt-10 ease-linear transition-all duration-150 text-l'
+               >Agregar Nueva dotacion &#43;</Link>
            </div>
-           <div className='flex flex-row mt-60 justify-center items-center'>
-          <Link to={"/dotacion"}
-                className='text-gray-800 bg-transparent border border-solid border-gray-800 hover:bg-gray-800 hover:text-white active:bg-gray-800 font-bold uppercase px-8 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 text-l'
-               >Nueva dotacion</Link>
-          <h2>Dotaciones Entregadas</h2>
+           <h1 className='text-center mt-20 text-3xl'>Dotaciones Entregadas</h1>
+           <div className='flex flex-row mt-20 justify-center items-center'>
+          
+          
           {error ? <p>Hubo un Error</p> : null }
           {cargando ? <p>Cargando...</p> : null }
 
@@ -62,6 +65,7 @@ const Dotaciones = () => {
                 </tbody>
                  
           </table>
+          </div>
           </div>
          
       </Fragment>
